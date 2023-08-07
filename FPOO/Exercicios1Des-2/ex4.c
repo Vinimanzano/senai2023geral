@@ -2,13 +2,13 @@
 int main(){
 	int a, b, c;
 	
-	printf("Entre o primeiro lado do triangulo: ");
+	printf("Entre o primeiro lado do A: ");
 	scanf("%d", &a);
 	
-	printf("Entre o segundo lado do triangulo: ");
+	printf("Entre o segundo lado do B: ");
 	scanf("%d", &b);
 	
-	printf("Entre o terceiro lado do triangulo: ");
+	printf("Entre o terceiro lado do C: ");
 	scanf("%d", &c);
 	
 	if(a == b && a == c){

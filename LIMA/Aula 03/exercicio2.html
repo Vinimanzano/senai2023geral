@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+  <fieldset>
   <div class="container" >
     <a class="links" id="paracadastro"></a>
     <a class="links" id="paralogin"></a>
@@ -31,15 +32,15 @@
           </select><br/>
           
           <b><label for="radio">Tipo:</label></b>
-          <input type="radio" name="genero" value="T">Técnico
-          <input type="radio" name="genero" value="P">Professor
-          <input type="radio" name="Aluno" value="A">Aluno<br/>
+        <b><input type="radio" name="genero" value="T">Técnico</b>
+        <b><input type="radio" name="genero" value="P">Professor</b>
+        <b><input type="radio" name="Aluno" value="A">Aluno<br/></b>
           </p>
           <b><label for="nome_cad">Data Criação</label>
           <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" /><br/> 
           <b><label for="radio">Perfil:</label></b>
-          <input type="radio" name="genero" value="C">Convidado</b>
-          <input type="radio" name="genero" value="A">Administrador<br/></b>
+          <b><input type="radio" name="genero" value="C">Convidado</b>
+          <b><input type="radio" name="genero" value="A">Administrador<br/></b>
         </form>
       </div>
     <b><label>Comentário: </label><br/></b>
@@ -54,5 +55,6 @@
         <input type="reset" value="Excluir">
             
   </div>  
+</fieldset>
 </body>
 </html>

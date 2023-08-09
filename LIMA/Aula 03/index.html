@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicio3</title>
 </head>
 <body>
+    <h1>Forumlário</h1>
     <form>
-        <input type="text" placeholder="Digite seu Nome:">
-        <input type="password" placeholder="Digite sua senha:">
-        <input type="number" placeholder="Digite seu numero:">
-        <input type="email" placeholder="Digite seu email:">
-        <input type="date" placeholder="Digite sua data de nascimento:"> 
-        <input type="search" placeholder="Faça sua pesquisa:">
-        <input type="submit" value="Clique no botão">
-        <input type="reset" value="Clique para resetar">
-    </form>
+        <fieldset>
+            <b><legend>Dados Pessoais</legend></b><br/>
+            <b><label>Nome: </label></b>
+            <input type="text"><br/>
+            <br/><b><label>Endereço: </label></b>
+            <input type="number"><br/>
+            <br/><b><label>Cidade: </label></b>
+            <input type="number"><br/>
+            <br/><b><label for="radio">Stats:</label></b>
+            <select name="select">
+            <option value="valor1">Rio de Janeiro</option>
+            <option value="valor2" selected>Minas Gerais</option>
+            <option value="valor3" selected>São Paulo</option>
+            </select><br/>
+        </fieldset>
+    </form>    
+        <fieldset>
+            <b><legend>Dados Profissionais</legend></b>
+            <br><b><legend>Natureza do Cargo</legend></b>
+          <b><input type="radio" name="genero" value="G">Gerência</b>
+          <b><input type="radio" name="genero" value="F">Financeiro</b>
+          <b><input type="radio" name="genero" value="R">Recepção</b>
+          <b><input type="radio" name="genero" value="A">Administrativo</b>
+          <b><input type="radio" name="genero" value="J">Juridico</b><br/>
 
-        <input type="radio" name="genero" value="M">Masculino
-        <input type="radio" name="genero" value="F">Feminino<br/>
+        <br><b><legend>Área de Interesse</legend></b>
+          <b><input type="checkbox" name="vicio" value="alcool">Computação</b>
+          <b><input type="checkbox" name="vicio" value="aposta">Biologia</b>
+          <b><input type="checkbox" name="vicio" value="aposta">Meio Ambiente</b>
+          <b><input type="checkbox" name="vicio" value="aposta">Engenharia</b>
+          <b><input type="checkbox" name="vicio" value="aposta">História</b><br/>
+        
+          <br/><b><label>Mini-curriculo: </label></b><textarea id="story" name="story" rows="8" cols="50"></textarea></div>
+        </fieldset>
+        <br/><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
 
-        <input type="checkbox" name="vicio" value="tabaco">Tabaco
-        <input type="checkbox" name="vicio" value="alcool">Cabelo
-        <input type="checkbox" name="vicio" value="aposta">Aposta<br/>
-
-        <input type="color">
-        <input type="range"><br/>
-
-    <fieldset>
-        <legend>Forumlário</legend>
-        <label>Nome: </label>
-        <input type="text">
-        <label>Idade: </label>
-        <input type="number">
-    </fieldset>
 
 </body>
 </html>

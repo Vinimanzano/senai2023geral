@@ -1,10 +1,8 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main(){
-  int i;
-  do{
-  		printf("Digite um numero inteiro:");
-  		scanf("%d", &i);
-  }while(1 != 4);
+	int i;
+	do{
+		printf("Digite um número inteiro: ");
+		scanf("%d",&i);
+	}while(i != 4);
 	return 0;
-}	

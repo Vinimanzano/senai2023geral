@@ -1,0 +1,16 @@
+body{
+    background-image: url(../img/sono.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+.sleep{
+    color: rgb(153, 37, 128);
+    font-size: 70px;
+}
+#sleepjr{
+    color: rgb(237, 9, 138);
+    font-size: 60px;
+}

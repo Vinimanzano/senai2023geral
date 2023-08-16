@@ -26,19 +26,19 @@ int main(){
 		if (IMC <= 18){
 			printf("Abaixo do peso\n");	
 		}
-		if (IMC >= 19 && IMC <= 25){
+		if (IMC >= 19 && IMC <= 26){
 			printf("Peso ideal (Parabéns!)\n");
 		}
-		if (IMC >= 26 && IMC <= 29){
+		if (IMC >= 26 && IMC <= 30){
 			printf("Levemente acima do Peso\n");
 		}
-		if (IMC >= 30 && IMC <= 34){
+		if (IMC >= 30 && IMC <= 35){
 			printf("Obesidade grau I\n");
 		}
 		if (IMC >= 35 && IMC <= 39){
 			printf("Obesidade grau II (Severa)\n");
 		}
-		if (IMC >= 39 && IMC <= 40){
+		if (IMC >= 39 && IMC <= 50){
 			printf("Obesidade grau III (Morbido)\n");
 		}
 			

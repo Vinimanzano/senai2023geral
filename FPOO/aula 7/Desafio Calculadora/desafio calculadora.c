@@ -1,5 +1,9 @@
 #include <stdio.h>
+#include <locale.h>
 int main(){
+	
+	setlocale(LC_ALL,"");
+	
 	char cliente[10];
     float peso;
     float altura;
@@ -23,7 +27,7 @@ int main(){
 			printf("Abaixo do peso\n");	
 		}
 		if (IMC >= 19 && IMC <= 25){
-			printf("Peso ideal (Parabens!)\n");
+			printf("Peso ideal (Parabéns!)\n");
 		}
 		if (IMC >= 26 && IMC <= 29){
 			printf("Levemente acima do Peso\n");

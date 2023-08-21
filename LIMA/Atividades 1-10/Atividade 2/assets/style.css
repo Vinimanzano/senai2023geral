@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.inicio{
+    display: flex;
+}
+
+.inicio p{
+    margin: 20px;
+}
+.nome1{
+    display: flex;  
+}
+
+.nome1 p{
+    margin: 20px;
+    font-size: small;
+}
+.nome2{
+    display: flex;  
+}
+
+.nome2 p{
+    margin: 20px;
+}
+.nome3{
+    display: flex;  
+}
+
+.nome3 p{
+    margin: 20px;
+}

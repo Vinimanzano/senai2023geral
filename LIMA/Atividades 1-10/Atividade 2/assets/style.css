@@ -1,34 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.inicio{
+main {
     display: flex;
+    justify-content: center;
 }
 
-.inicio p{
+table {
+    height: 20vh;
+    border-collapse: collapse; 
+}
+  
+tr {
+    border-bottom: 1pt solid black;
+    display: flex;
     margin: 20px;
 }
-.nome1{
+
+tr {
     display: flex;  
-}
-
-.nome1 p{
-    margin: 20px;
-    font-size: small;
-}
-.nome2{
-    display: flex;  
-}
-
-.nome2 p{
-    margin: 20px;
-}
-.nome3{
-    display: flex;  
-}
-
-.nome3 p{
-    margin: 20px;
+    margin: 10px;
 }

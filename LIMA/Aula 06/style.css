@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+.exercicios{
+    color: rgb(153, 37, 128);
+    font-size: 70px;
+} */
+/* #pag{
+    color: rgb(237, 9, 138);
+    font-size: 60px;
+} */
+
+.lista2{
+    display: flex;
+}

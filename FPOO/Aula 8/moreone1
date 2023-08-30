@@ -2,8 +2,8 @@
 #include <locale.h>
 #include <string.h>
 
-int main(void){
-	setlocale(LC_ALL,"Portuguese");
+int main(){
+	setlocale(LC_ALL,"");
 	int doadores, idade[20], dias[20], i;
 	char nome[20][20], sexo[20][20];
 	

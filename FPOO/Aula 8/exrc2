@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main(void){
-	setlocale(LC_ALL,"Portuguese");
+	setlocale(LC_ALL,"");
 	char cidade[20], candidato[20][20];
 	int numCandidatos, brancos, nulos, i;
 	float porcentagem[20], votos[20], totalVotos;

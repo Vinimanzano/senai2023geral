@@ -10,11 +10,11 @@ int main (){
 	int y2 = 110 - 10 / y1;
 	
 	if(x1 < x2)
-		printf("X1 à esquerda ");
+		printf("X1 Ã  esquerda ");
 	else if(x1 == x2)
 		printf("Mesmo ponto horizontal");
 	else
-		printf("X1 à direita");
+		printf("X1 Ã  direita, ");
 		
 	if(y1 < y2)
 		printf("Y1 acima");
@@ -23,4 +23,3 @@ int main (){
 	else 
 		printf("Y1 abaixo");
 }
-	

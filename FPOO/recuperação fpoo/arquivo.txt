@@ -1,0 +1,5 @@
+Nome: vini, Nota: 3
+Nome: joaq, Nota: 5
+Nome: lilian, Nota: 5
+Nome: thiago, Nota: 7
+Nome: mateus, Nota: 9

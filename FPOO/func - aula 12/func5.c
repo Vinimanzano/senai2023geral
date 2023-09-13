@@ -1,5 +1,5 @@
 #include  <stdio.h>
-//função que retorna a soma de dois parâmetros inteiros
+//funÃ§Ã£o que retorna a soma de trÃªs parÃ¢metros inteiros
 int soma (int a, int b, int c){
 	return a + b + c;
 }

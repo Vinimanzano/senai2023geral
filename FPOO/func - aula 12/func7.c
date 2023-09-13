@@ -19,5 +19,4 @@ int main(){
 	return 0;
 }
 
-// crie uma funçao que receba um vetor de numero e um numero qualquer e retorne a posiçao desde numero no vetor ou 
-// -1 se nao for encontrado (nome da funaçao busca)
+// crie uma funçao que receba um vetor de numero e um numero qualquer e retorne a posiçao desde numero no vetor ou -1 se nao for encontrado (nome da funaçao busca).

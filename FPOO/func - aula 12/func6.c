@@ -1,4 +1,4 @@
-//função que retorna a média de dois parâmetros inteiros
+//funÃ§Ã£o que retorna a mÃ©dia de trÃªs parÃ¢metros inteiros
 int media(int a, int b, int c){
 	return (a + b + c) / 2;
 }

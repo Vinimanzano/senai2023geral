@@ -1,0 +1,4 @@
+Pedro 5 7 10
+Maria 10 8 6
+Genoveva 5 6 9
+Monique 7 9 2

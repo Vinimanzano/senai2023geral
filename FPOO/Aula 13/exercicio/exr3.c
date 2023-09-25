@@ -6,7 +6,7 @@
 int main () {
 	setlocale(LC_ALL,"");
    FILE *entrada;
-   entrada = fopen ("dados.txt", "r");
+   entrada = fopen ("resultado.txt", "r");
    if (entrada == NULL) {
       printf ("\nNão encontrei o arquivo!\n");
       exit (EXIT_FAILURE);

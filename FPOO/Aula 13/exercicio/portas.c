@@ -3,7 +3,7 @@
 //variáveis globais
 FILE *entrada, *saida;
 char in[] = "portas.in"
-char out[] = "por
+char out[] = "portas.out"
 
 
 int total, i, j;

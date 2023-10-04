@@ -160,27 +160,27 @@
 //1. Desenvolva um programa que leia o preço de um produto e se o preço for maior do que 1000 reais aplique um desconto de 8%. 
 //Mostre o preço final.
 
-// function nomes(){
-//     var preco = 1544
+//  function nomes(){
+//      var preco = 1544
 
-//     if(preco > 1000){
-//         preco = preco * 0.88;
-//     }
-//     console.log(preco)
+//      if(preco > 1000){
+//          preco = preco * 0.88;
+//      }
+//      console.log(preco)
 // }
-// nomes(); 
+//  nomes(); 
 
-// //2. Desenvolva um programa que leia o salário de um funcionário e o número de filhos. Se o salário for menor do que 2000 o funcionário receberá um salário família equivalente a 45 reais por filho. 
-//  //Apresente o salário final.
+// // //2. Desenvolva um programa que leia o salário de um funcionário e o número de filhos. Se o salário for menor do que 2000 o funcionário receberá um salário família equivalente a 45 reais por filho. 
+// //  //Apresente o salário final.
 
-// nome();
-// function nome(){
-//     var salario1 = 1500, salario2 = 1200, salario3 = 2000, filho = 6
+//  nome();
+//  function nome(){
+//      var salario1 = 1500, salario2 = 1200, salario3 = 2000, filho = 6
    
-//     if(salario1 > 2000){
+//      if(salario1 > 2000){
 
-//         salario2 = filho * 45
-//         salario1 = salario1 + salario2;
-//     }
-//         console.log('Seu salário foi alterado')
-// }
+//          salario2 = filho * 45
+//          salario1 = salario1 + salario2;
+//      }
+//          console.log('Seu salário foi alterado')
+//  }

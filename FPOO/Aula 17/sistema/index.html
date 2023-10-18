@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>INSS e IRRF</title>
-</head>
-    <input type="text" id="nomeInput" name="salario1" placeholder="Digite aqui"/>
-    <input type="text" id="salarioInput" name="salario2" placeholder="Digite aqui"/>
-    <button type="button" onclick="Evento()">Enviar</button>
-<body>  
-   <div class="card">
-        <img src="avatar2.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h3>Vinicius</h3>
-          <p>Desenvolvedor e Trainee</p>
-        </div>
-      </div>
-</body>
-<script src="script.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>INSS e IRRF</title>
+	</head>
+    <form id="novaPessoa"></form>
+	    <input type="text" id="nomeInput" name="salario3" placeholder="Digite o nome" />
+	    <input type="number" id="salarioInput" name="salario4" placeholder="Digite o número" />
+	    <button type="SU" onclick="Evento()">Enviar</button>
+	<body>
+		<div class="card">
+			<div class="container">
+				<h3>Vinicius</h3>
+				<h3>Desenvolvedor e Trainee</h3>
+        
+			</div>
+      <div id="dados"></div>
+    </form>
+    </header>
+    <main>
+      <table>
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Salario</th>
+                  <th>SalarioBase</th>
+                  <th>SalarioLiquido</th>
+              </tr>
+          </thead>
+          <tbody id="corpoTabela"></tbody>
+      </table>
+    </main>
+	</body>
+	<script src="script.js"></script>
 </html>

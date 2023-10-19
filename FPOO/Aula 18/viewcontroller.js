@@ -29,6 +29,15 @@ function remover(e){
     pessoas.splice(e, 1);
 }
 
+function EntrarNoModoEdicao(e){
+    const paragrafo = document.getElementById("paragrafo");
+    const novoTexto = prompt("Digite o Novo Texto");
+    
+    if (novoTexto != null){
+        paragrafo.textContent = novoTexto;
+    }
+}
+
 
 
 

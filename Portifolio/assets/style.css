@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
 *{
     margin: 0;
     height: 0;
@@ -21,7 +24,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     overflow-x: hidden;
-    background-color: rgba(114, 227, 250, 0.413);
+    background-color: blueviolet;
     }
 
 header{
@@ -32,7 +35,7 @@ header{
  /* background-color: rgb(42, 165, 118); */
  align-items: center;
  position: fixed;
- background-color: rgba(114, 227, 250, 0.413)
+ background-color: blueviolet;
  z-index: 99;
  
 }
@@ -69,11 +72,11 @@ font-family: 'Share Tech Mono', monospace;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 17, 255);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(255,0,0);
+    color: rgb(0, 0, 0);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -104,11 +107,11 @@ font-family: 'Share Tech Mono', monospace;
   
 .one:hover {
     color: #fff;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 17, 255);
   }
   
 .one:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+    box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
   }
 
 .two {
@@ -124,11 +127,11 @@ font-family: 'Share Tech Mono', monospace;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 17, 255);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(255,0,0);
+    color: rgb(0, 0, 0);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -157,11 +160,11 @@ font-family: 'Share Tech Mono', monospace;
   
 .two:hover {
     color: #fff;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 17, 255);
   }
   
 .two:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
   }
 
 .tree {
@@ -177,11 +180,11 @@ font-family: 'Share Tech Mono', monospace;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 17, 255);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(255,0,0);
+    color: rgb(8, 8, 8);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -212,11 +215,11 @@ font-family: 'Share Tech Mono', monospace;
   
 .tree:hover {
     color: #fff;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 17, 255);
   }
   
-.tree     :hover::before {
-    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+.tree:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
   }
 
 .home{
@@ -225,7 +228,6 @@ font-family: 'Share Tech Mono', monospace;
     height: 50vh;
     /* border: 1px solid black; */
     justify-content: space-around;
-    
 }
 
 
@@ -273,14 +275,19 @@ section{
 }
 
 .foto{
-    background: black;
-    height: 70%;
-    width: 100%;
+  width: 300px;
+  height: 350px;
+  background-image: url(/assets/img/283149099_5137559336332177_507569433021069880_n.jpg);
+  border: solid 1px white;
+  text-shadow: white 2px 10px 2px;
+  background-size: 300px;
+  
 }
 
 .social{
     height: 11%;
     width: 100%;
+    padding-left: 8%;
     
 }
 
@@ -293,16 +300,75 @@ section{
     display: flex;
     width: 89%;
     height: 50vh;
-    border: 1px solid rgb(218, 11, 45);
-    font-family: 'Bungee Spice', sans-serif;
+    /* border: 1px solid rgb(174, 15, 15); */
+    justify-content: space-around;
 }
+
+.teste1{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 60%;
+  height: 40%;
+  /* border: 1px solid red; */
+
+}
+
+.teste1 h1{
+  height: 30%;
+  font-size: 4rem;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -moz-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.teste1 p{
+  font-size: 2.3rem;
+  font-family: 'Delius', cursive;
+  padding-top: 3%;
+}
+
 .skills{
+  display: flex;
+  width: 89%;
+  height: 50vh;
+  border: 1px solid rgb(174, 15, 15);
+  justify-content: space-around;
+}
+.teste2 {
     display: flex;
     width: 89%;
-    height: 50vh;
-    border: 1px solid rgb(11, 18, 218);
-    font-family: 'Bungee Spice', sans-serif;
-    
+    height: 50vh;   
+}
+
+.teste2 h1{
+  height: 30%;
+  font-size: 4rem;
+  display: inline-block;
+  padding-left: 15%;
+  opacity: 0;
+  transform: translateY(-0.25em);
+  display: inline-block;
+  animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
+}
+
+.teste2 p{
+  display: flex;
+  margin-right: 20%;
+  height: 30%;
+  font-size: 4rem;
+  font-size: 2.3rem;
+  font-family: 'Delius', cursive;
+  padding-top: 10%;
 }
 
 @keyframes typing{
@@ -327,4 +393,77 @@ section{
     100%{
         transform: translateY(0px);
     }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes burst_in {
+  25%, 80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@for $i from 1 through 17 {
+  .sentence-2 .letter:nth-of-type(#{$i}) {
+    animation-delay: $i * 0.06s;
+  }
+  .sentence-3 .letter:nth-of-type(#{$i}) {
+    animation-delay: ($i * $i * 0.0035s);
+  }
+  .sentence-4 .letter:nth-of-type(#{$i}) {
+    animation-delay: $i * $i * $i * $i * 0.0000075s;
+  }
+  .sentence-5 .letter:nth-of-type(#{$i}) {
+    animation-delay: ((17 - ($i * $i)) * 0.0025s) + 0.55s;
+  }
+  .sentence-6 .letter:nth-of-type(#{$i}) {
+    animation-delay: ($i / 17 * ($i - 17) * 0.1s) + 0.3s;
+  }
 }

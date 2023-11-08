@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+*{
+    margin: 0;
+    height: 0;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    background-color: rgba(114, 227, 250, 0.413);
+    }
+
+header{
+ width: 89%;
+ height: 8vh;
+ display: flex;
+ justify-content: space-between;
+ /* background-color: rgb(42, 165, 118); */
+ align-items: center;
+ position: fixed;
+ 
+}
+
+header p{
+ font-size: 2.3rem;
+ color: rgb(17, 17, 17);
+ font-family: 'Share Tech Mono', monospace;
+}
+
+
+.button {
+display: flex;
+width: 25%;
+font-size: 2.3rem;
+justify-content: space-between;
+font-family: 'Share Tech Mono', monospace;
+}
+
+.test {
+    display: flex;
+  }
+
+.one {
+    background: transparent;
+    width: 10%;
+    height: 20px;
+    justify-content: center;
+    position: relative;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255,0,0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+
+  
+  
+.one span {
+    margin: 10px;
+  }
+  
+.one::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+.one:hover {
+    color: #fff;
+    border: 1px solid rgb(255,0,0);
+  }
+  
+.one:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  }
+
+.two {
+    background: transparent;
+    width: 60%;
+    height: 20px;
+    justify-content: center;
+    position: relative;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255,0,0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+.two span {
+    margin: 10px;
+  }
+  
+.two::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+.two:hover {
+    color: #fff;
+    border: 1px solid rgb(255,0,0);
+  }
+  
+.two:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  }
+
+.tree {
+    background: transparent;
+    width: 10%;
+    height: 20px;
+    justify-content: center;
+    position: relative;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255,0,0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+
+  
+  
+.tree span {
+    margin: 10px;
+  }
+  
+.tree::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+.tree:hover {
+    color: #fff;
+    border: 1px solid rgb(255,0,0);
+  }
+  
+.tree   :hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  }
+
+.home{
+    display: flex;
+    width: 89%;
+    height: 50vh;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    
+}
+
+
+section{
+    padding-top: 6%;
+
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 60%;
+    height: 40%;
+    /* border: 1px solid red; */
+
+}
+
+.teste h1{
+    height: 30%;
+    font-size: 2.5rem;
+    border-right: 3px solid rgb(141, 131, 131);
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(21), blinking 0.5s ease-in-out infinite;
+}
+
+.teste p{
+    font-size: 3rem;
+    font-family: 'Wendy One', sans-serif;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    width: 23%;
+    /* border: 1px solid blue; */
+}
+
+.foto{
+    background: black;
+    height: 70%;
+    width: 100%;
+}
+
+.social{
+    height: 11%;
+    width: 100%;
+    
+}
+
+.imagem div img{
+    width: 40px;
+    height: 40px;
+}
+
+.about-me{
+    display: flex;
+    width: 89%;
+    height: 50vh;
+    border: 1px solid rgb(218, 11, 45);
+    font-family: 'Bungee Spice', sans-serif;
+}
+.skills{
+    display: flex;
+    width: 89%;
+    height: 50vh;
+    border: 1px solid rgb(11, 18, 218);
+    font-family: 'Bungee Spice', sans-serif;
+    
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+}
+    @keyframes blinking {
+    0%
+    {
+        border-color: transparent;
+    }
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

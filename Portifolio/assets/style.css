@@ -32,6 +32,8 @@ header{
  /* background-color: rgb(42, 165, 118); */
  align-items: center;
  position: fixed;
+ background-color: rgba(114, 227, 250, 0.413)
+ z-index: 99;
  
 }
 
@@ -213,7 +215,7 @@ font-family: 'Share Tech Mono', monospace;
     border: 1px solid rgb(255,0,0);
   }
   
-.tree   :hover::before {
+.tree     :hover::before {
     box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
   }
 

@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
 
 *{
-    margin: 0;
-    height: 0;
+  margin: 0;
+  height: 0;
    
 }
 
@@ -23,8 +24,21 @@ body{
     align-items: center;
     justify-content: flex-start;
     overflow-x: hidden;
-    background-color: grey;
-    }
+    background-image: linear-gradient(25deg, darkgrey 70%, lightgray 30%);
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar{
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track{
+  background: white;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 20px;
+}
 
 header{
  width: 89%;
@@ -34,7 +48,8 @@ header{
  /* background-color: rgb(42, 165, 118); */
  align-items: center;
  position: fixed;
- background-color: grey;
+ background-image: linear-gradient(25deg, darkgrey 70%, lightgray 30%);
+ background-attachment: fixed;
  z-index: 99;
 }
 
@@ -50,13 +65,12 @@ header p{
 display: flex;
 width: 25%;
 font-size: 2.3rem;
-justify-content: space-between;
 font-family: 'Share Tech Mono', monospace;
 }
 
 .test {
     display: flex;
-  }
+}
 
 .one {
     background: transparent;
@@ -79,8 +93,6 @@ font-family: 'Share Tech Mono', monospace;
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
-
-  
   
 .one span {
     margin: 10px;
@@ -221,6 +233,59 @@ font-family: 'Share Tech Mono', monospace;
   box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
   }
 
+  .four {
+    background: transparent;
+    width: 10%;
+    height: 20px;
+    justify-content: center;
+    position: relative;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(0, 17, 255);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(8, 8, 8);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+.four span {
+    margin: 10px;
+  }
+  
+.four::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+.four:hover {
+    color: #fff;
+    border: 1px solid rgb(0, 17, 255);
+  }
+  
+.four:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
+  }
+
 .home{
     display: flex;
     width: 89%;
@@ -229,10 +294,8 @@ font-family: 'Share Tech Mono', monospace;
     justify-content: space-around;
 }
 
-
 section{
     padding-top: 6%;
-
 }
 
 .teste{
@@ -243,7 +306,8 @@ section{
     height: 40%;
     /* border: 1px solid red; */
     color: white;
-
+    padding-top: 6%;
+    padding-left: 5%;
 }
 
 .teste h1{
@@ -281,14 +345,13 @@ section{
   border: solid 1px white;
   text-shadow: white 2px 10px 2px;
   background-size: 300px;
-  
 }
 
 .social{
     height: 11%;
     width: 100%;
-    padding-left: 8%;
-    
+    padding-left: 22%;
+    padding-top: 1%;
 }
 
 .imagem div img{
@@ -297,22 +360,13 @@ section{
 }
 
 .about-me{
+    font-family: 'Share Tech Mono', monospace;
     display: flex;
     width: 89%;
     height: 50vh;
     /* border: 1px solid rgb(174, 15, 15); */
     justify-content: space-around;
-    color: white;
-}
-
-.teste1{
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
-  width: 60%;
-  height: 40%;
-  /* border: 1px solid red; */
-
+    padding-left: 6%;
 }
 
 .teste1 h1{
@@ -322,6 +376,7 @@ section{
   transform: translateY(-0.25em);
   display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
+  color: white;
 }
 
 .teste1 p{
@@ -334,10 +389,10 @@ section{
   display: flex;
   width: 89%;
   height: 50vh;
-  border: 1px solid rgb(174, 15, 15);
+  /* border: 1px solid rgb(174, 15, 15); */
   justify-content: space-around;
-  color: white;
 }
+
 .teste2 {
     display: flex;
     width: 89%;
@@ -345,24 +400,93 @@ section{
 }
 
 .teste2 h1{
+  font-family: 'Share Tech Mono', monospace;
   height: 30%;
   font-size: 4rem;
   display: inline-block;
-  padding-left: 15%;
   opacity: 0;
   transform: translateY(-0.25em);
   display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
+  color: white;
 }
 
-.teste2 p{
+.teste2 img{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 15%;
+ height: 40%;
+ padding-top: 10%;
+}
+
+.projects{
   display: flex;
-  margin-right: 20%;
+  flex-direction: column;
+  width: 89%;
+  height: 150vh;
+  border: 1px solid rgb(174, 15, 15);
+  row-gap: 6%;
+}
+
+.teste3 {
+    display: flex;
+    width: 89%;  
+}
+
+.teste3 h1{
+  font-family: 'Share Tech Mono', monospace;
   height: 30%;
   font-size: 4rem;
-  font-size: 2.3rem;
-  font-family: 'Delius', cursive;
-  padding-top: 10%;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-0.25em);
+  display: inline-block;
+  animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
+  color: white;
+}
+
+.teste3 div{
+display: flex;
+width: 89%;
+/* height: 60vh;
+border: 1px solid rgb(174, 15, 15); */
+}
+
+.projetos{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(174, 15, 15);
+}
+
+.basicProjct{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 32.8%;
+  border: 1px solid rgb(174, 15, 15);
+  column-gap: 20px;
+}
+
+.Prjcts{
+  height: 80%;
+  width: 40%;
+  background: white;
+}
+
+.estilo{
+  width: 60%;
+  height: 80%;
+  font-size: 1.1rem;
+  font-family: 'Chango', sans-serif;
+}
+
+.estilo p{
+  max-width: 90%;
+  word-break: break-word;
 }
 
 @keyframes typing{

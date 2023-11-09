@@ -40,6 +40,10 @@ body::-webkit-scrollbar-thumb{
   border-radius: 20px;
 }
 
+.logo{
+  height:60px;
+}
+
 header{
  width: 89%;
  height: 8vh;

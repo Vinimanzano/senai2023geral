@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 
 *{
     margin: 0;
@@ -24,7 +23,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     overflow-x: hidden;
-    background-color: blueviolet;
+    background-color: grey;
     }
 
 header{
@@ -35,15 +34,15 @@ header{
  /* background-color: rgb(42, 165, 118); */
  align-items: center;
  position: fixed;
- background-color: blueviolet;
+ background-color: grey;
  z-index: 99;
- 
 }
 
 header p{
  font-size: 2.3rem;
  color: rgb(17, 17, 17);
  font-family: 'Share Tech Mono', monospace;
+ color: white;
 }
 
 
@@ -243,6 +242,7 @@ section{
     width: 60%;
     height: 40%;
     /* border: 1px solid red; */
+    color: white;
 
 }
 
@@ -271,7 +271,7 @@ section{
     align-items: center;
     height: 75%;
     width: 23%;
-    /* border: 1px solid blue; */
+    /* border:  1px solid blue; */
 }
 
 .foto{
@@ -302,6 +302,7 @@ section{
     height: 50vh;
     /* border: 1px solid rgb(174, 15, 15); */
     justify-content: space-around;
+    color: white;
 }
 
 .teste1{
@@ -317,18 +318,10 @@ section{
 .teste1 h1{
   height: 30%;
   font-size: 4rem;
-  -moz-animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -moz-animation-name: slidein;
-  -webkit-animation-name: slidein;
-  animation-name: slidein;
-  -moz-animation-iteration-count: 3;
-  -webkit-animation-iteration-count: 3;
-  animation-iteration-count: 3;
-  -moz-animation-direction: alternate;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+  opacity: 0;
+  transform: translateY(-0.25em);
+  display: inline-block;
+  animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
 }
 
 .teste1 p{
@@ -343,6 +336,7 @@ section{
   height: 50vh;
   border: 1px solid rgb(174, 15, 15);
   justify-content: space-around;
+  color: white;
 }
 .teste2 {
     display: flex;
@@ -447,23 +441,5 @@ section{
   25%, 80% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@for $i from 1 through 17 {
-  .sentence-2 .letter:nth-of-type(#{$i}) {
-    animation-delay: $i * 0.06s;
-  }
-  .sentence-3 .letter:nth-of-type(#{$i}) {
-    animation-delay: ($i * $i * 0.0035s);
-  }
-  .sentence-4 .letter:nth-of-type(#{$i}) {
-    animation-delay: $i * $i * $i * $i * 0.0000075s;
-  }
-  .sentence-5 .letter:nth-of-type(#{$i}) {
-    animation-delay: ((17 - ($i * $i)) * 0.0025s) + 0.55s;
-  }
-  .sentence-6 .letter:nth-of-type(#{$i}) {
-    animation-delay: ($i / 17 * ($i - 17) * 0.1s) + 0.3s;
   }
 }

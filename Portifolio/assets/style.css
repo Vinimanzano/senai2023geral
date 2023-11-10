@@ -163,7 +163,7 @@ font-family: 'Share Tech Mono', monospace;
     bottom: 0;
     margin: auto;
     content: '';
-    border-radius: 50%;
+    border-radius: 40%;
     display: block;
     width: 20em;
     height: 20em;
@@ -448,6 +448,7 @@ section{
   display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
   color: white;
+  padding-left: 6%;
 }
 
 .teste3 div{
@@ -463,26 +464,25 @@ border: 1px solid rgb(174, 15, 15); */
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  border: 1px solid rgb(174, 15, 15);
+  /* border: 1px solid rgb(174, 15, 15); */
 }
 
 .basicProjct{
   display: flex;
   align-items: center;
   width: 70%;
-  height: 32.8%;
+  height: 100%;
   border: 1px solid rgb(174, 15, 15);
   column-gap: 20px;
 }
 
 .Prjcts{
-  height: 80%;
-  width: 40%;
-  background: white;
+  height: 300px;
+  width: 400px;
 }
 
 .estilo{
-  width: 60%;
+  width: 70%;
   height: 80%;
   font-size: 1.1rem;
   font-family: 'Chango', sans-serif;

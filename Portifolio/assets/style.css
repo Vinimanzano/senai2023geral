@@ -18,6 +18,10 @@ a{
     text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     font-family: 'IBM Plex Mono', monospace;
     display: flex;
@@ -307,7 +311,7 @@ font-family: 'Share Tech Mono', monospace;
 }
 
 section{
-    padding-top: 13%;
+    padding-top: 8%;
 }
 
 .teste{
@@ -330,6 +334,7 @@ section{
     white-space: nowrap;
     overflow: hidden;
   animation:t 3s linear infinite alternate;
+  text-shadow: 3px 5px 9px white;
 }
 
 .teste p{
@@ -368,7 +373,7 @@ section{
     padding-top: 1%;
 }
 
-.imagem div img{
+.imagem img{
     width: 40px;
     height: 40px;
 }
@@ -392,6 +397,7 @@ section{
   display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
   color: rgb(0, 0, 0);
+  text-shadow: 3px 5px 9px white;
 }
 
 .teste1 p{
@@ -425,6 +431,7 @@ section{
   display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
   color: rgb(0, 0, 0);
+  text-shadow: 3px 5px 9px white;
 }
 
 .teste2 img{
@@ -439,35 +446,22 @@ section{
 .projects{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 89%;
-  height: 150vh;
+  height: 130vh;
   /* border: 1px solid rgb(174, 15, 15); */
-  row-gap: 6%;
 }
 
-.teste3 {
-    display: flex;
-    width: 89%;  
-}
-
-.teste3 h1{
+.titlePjct{
   font-family: 'Share Tech Mono', monospace;
-  height: 30%;
   font-size: 4rem;
-  display: inline-block;
   opacity: 0;
   transform: translateY(-0.25em);
-  display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
   color: rgb(0, 0, 0);
   padding-left: 6%;
-}
-
-.teste3 div{
-display: flex;
-width: 89%;
-/* height: 60vh;
-border: 1px solid rgb(174, 15, 15); */
+  text-shadow: 3px 5px 9px white;
+  height: 12%;
 }
 
 .projetos{
@@ -476,27 +470,38 @@ border: 1px solid rgb(174, 15, 15); */
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  /* border: 1px solid rgb(174, 15, 15); */
+  /* border: 1px solid rgb(28, 174, 15); */
 }
 
 .basicProjct{
   display: flex;
-  align-items: center;
-  width: 70%;
-  height: 100%;
-  /* border: 1px solid rgb(174, 15, 15); */
-  column-gap: 20px;
+  width: 100%;
+  height: 33%;
+  /* border: 1px solid rgb(174, 158, 15); */
   color: white;
 }
 
-.Prjcts{
-  height: 400px;
-  width: 650px;
+.estilo a{
+  height: 95%;
+  width: 35%;
+}
+
+.estilo a img{
+  width: 100%;
+  height: 100%;
+}
+
+.estilo p{
+  align-items: flex-start;
 }
 
 .estilo{
-  width: 70%;
-  height: 80%;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  column-gap: 20px;
+  width: 100%;
+  height: 100%;
   font-size: 1.1rem;
   font-family: 'Share Tech Mono', monospace;
 }
@@ -506,38 +511,36 @@ border: 1px solid rgb(174, 15, 15); */
   word-break: break-word;
 }
 
-footer{
+footer {
   display: flex;
-  flex-direction: row-reverse;
+  align-items: center;
   width: 89%;
   justify-content: space-between;
-  height: 100%;
-  padding: 3%;
+  height: 10vh;
 }
 
 footer p{
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-family: 'Share Tech Mono', monospace;
+  color: yellow;
 }
 
-.voltar-ao-topo {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 12px;
-  display: none;
-  justify-content: end;
-}
-.voltar-ao-topo:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+.btnTop{
+  padding: 20px;
+  font-size: 1rem;
+  background-image: url(../assets/img/seta.png);
+  background-size:cover ;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .4s;
 }
 
-.voltar-ao-topo p{
-  color: white;
+.btnTop:hover {
+  background-color: transparent;
+  transform: scale(1.3);
 }
-
 
 @keyframes t{
   0% {width:0%}
@@ -550,78 +553,9 @@ footer p{
     }
 }
 
-@keyframes float{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(50px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@-moz-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 @keyframes burst_in {
   25%, 80% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes degrade-animado{
-  0%{
-    background-position-x: 0%;
-  }
-  100%{
-    background-position-x: 100%;
   }
 }

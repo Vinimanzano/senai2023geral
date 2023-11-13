@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 
 *{
   margin: 0;
@@ -24,7 +27,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     overflow-x: hidden;
-    background-image: linear-gradient(to left, lightgray, orange, pink);
+ background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68);
     background-size: 500% 100%;
     animation: degrade-animado 5s infinite alternate;
     background-attachment: fixed;
@@ -43,6 +46,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .logo{
+  padding-top: 2%;
   height:60px;
 }
 
@@ -54,7 +58,7 @@ header{
  /* background-color: rgb(42, 165, 118); */
  align-items: center;
  position: fixed;
- background-image: linear-gradient(to left, lightgray, orange, pink);
+ background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68);
  background-size: 500% 100%;
  animation: degrade-animado 5s infinite alternate;
  background-attachment: fixed;
@@ -64,7 +68,7 @@ header{
 header p{
  font-size: 2.3rem;
  color: rgb(17, 17, 17);
- font-family: 'Share Tech Mono', monospace;
+ font-family: 'Damion', cursive;
  color: rgb(0, 0, 0);
 }
 
@@ -93,11 +97,11 @@ font-family: 'Share Tech Mono', monospace;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(0, 17, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -125,12 +129,12 @@ font-family: 'Share Tech Mono', monospace;
   }
   
 .one:hover {
-    color: #fff;
-    border: 1px solid rgb(0, 17, 255);
+    color: #000000;
+    border: 1px solid rgb(255, 255, 255);
   }
   
 .one:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
+    box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
   }
 
 .two {
@@ -146,11 +150,11 @@ font-family: 'Share Tech Mono', monospace;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(0, 17, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -178,12 +182,12 @@ font-family: 'Share Tech Mono', monospace;
   }
   
 .two:hover {
-    color: #fff;
-    border: 1px solid rgb(0, 17, 255);
+    color: #000000;
+    border: 1px solid rgb(255, 255, 255);
   }
   
 .two:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
+  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
   }
 
 .tree {
@@ -199,11 +203,11 @@ font-family: 'Share Tech Mono', monospace;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(0, 17, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -233,12 +237,12 @@ font-family: 'Share Tech Mono', monospace;
   }
   
 .tree:hover {
-    color: #fff;
-    border: 1px solid rgb(0, 17, 255);
+    color: #000000;
+    border: 1px solid rgb(255, 255, 255);
   }
   
 .tree:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
+  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
   }
 
   .four {
@@ -254,11 +258,11 @@ font-family: 'Share Tech Mono', monospace;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(0, 17, 255);
+    border: 1px solid rgb(255, 250, 250);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -286,12 +290,12 @@ font-family: 'Share Tech Mono', monospace;
   }
   
 .four:hover {
-    color: #fff;
-    border: 1px solid rgb(0, 17, 255);
+    color: #000000;
+    border: 1px solid rgb(255, 249, 249);
   }
   
 .four:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(0, 17, 255);
+  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
   }
 
 .home{
@@ -330,9 +334,11 @@ section{
 
 .teste p{
     font-size: 3rem;
-    font-family: 'Wendy One', sans-serif;
+    font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
     transform: translateY(0px);
     animation: float 5s ease-in-out infinite;
+    color: white;
 }
 
 
@@ -368,7 +374,7 @@ section{
 }
 
 .about-me{
-    font-family: 'Share Tech Mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
     display: flex;
     width: 89%;
     height: 50vh;
@@ -390,8 +396,9 @@ section{
 
 .teste1 p{
   font-size: 2.3rem;
-  font-family: 'Delius', cursive;
+  font-family: 'Share Tech Mono', monospace;
   padding-top: 3%;
+  color: white;
 }
 
 .skills{
@@ -479,6 +486,7 @@ border: 1px solid rgb(174, 15, 15); */
   height: 100%;
   /* border: 1px solid rgb(174, 15, 15); */
   column-gap: 20px;
+  color: white;
 }
 
 .Prjcts{
@@ -490,7 +498,7 @@ border: 1px solid rgb(174, 15, 15); */
   width: 70%;
   height: 80%;
   font-size: 1.1rem;
-  font-family: 'Chango', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .estilo p{
@@ -509,7 +517,7 @@ footer{
 
 footer p{
   font-size: 0.8rem;
-  font-family: 'Chango', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .voltar-ao-topo {
@@ -517,7 +525,6 @@ footer p{
   bottom: 2em;
   right: 2em;
   text-decoration: none;
-  color: white;
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 12px;
   display: none;
@@ -525,6 +532,10 @@ footer p{
 }
 .voltar-ao-topo:hover {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.voltar-ao-topo p{
+  color: white;
 }
 
 

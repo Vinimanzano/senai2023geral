@@ -31,10 +31,12 @@ body{
     align-items: center;
     justify-content: flex-start;
     overflow-x: hidden;
- background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68);
+    background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68);
     background-size: 500% 100%;
     animation: degrade-animado 5s infinite alternate;
     background-attachment: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 body::-webkit-scrollbar{
@@ -59,7 +61,6 @@ header{
  height: 8vh;
  display: flex;
  justify-content: space-between;
- /* background-color: rgb(42, 165, 118); */
  align-items: center;
  position: fixed;
  background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68);
@@ -67,6 +68,7 @@ header{
  animation: degrade-animado 5s infinite alternate;
  background-attachment: fixed;
  z-index: 99;
+ /* background-color: rgb(42, 165, 118); */
 }
 
 header p{
@@ -355,6 +357,7 @@ section{
     height: 75%;
     width: 23%;
     /* border:  1px solid blue; */
+    
 }
 
 .foto{
@@ -385,7 +388,7 @@ section{
     height: 50vh;
     /* border: 1px solid rgb(174, 15, 15); */
     justify-content: space-around;
-    padding-left: 6%;
+    padding-left: 8%;
     
 }
 
@@ -459,7 +462,7 @@ section{
   transform: translateY(-0.25em);
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
   color: rgb(0, 0, 0);
-  padding-left: 6%;
+  padding-left: 5.4%;
   text-shadow: 3px 5px 9px white;
   height: 12%;
 }
@@ -568,3 +571,5 @@ footer p{
     background-position-x: 100%;
   }
 }
+
+/*@media only screen and (min-width: 900px) and (max-width: 1200px){} */

@@ -84,12 +84,17 @@
         <section class="contact" id="contact">
 
             <h1>Contact-me:</h1>
-            <form action="contato.vinimanzano@gmail.com" method="POST">
+            <form action="https://formsubmit.co/contato.vinimanzano@gmail.com" method="POST">
                 <input class="input" type="text" name="name"  placeholder="Nome" required>
                 <input class="input" type="email" name="email"  placeholder="E-mail" required>
                 <input class="input" type="number" name="number" placeholder="(xx)xxxxx-xxxx" required>
                 <textarea  class="input text" name="mensagem" placeholder="leave your message" required></textarea>
-                <button class="btnn" type="submit">Send</button>
+                <button  class="btnn" type='submit'>Enviar</button>
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+
+             </form>
             </form>
         </section>
         <footer>

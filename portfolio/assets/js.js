@@ -20,12 +20,7 @@ if (!document.cookie){
     setCookie("cookie", soma, 365);
     }
 
-    // $.ajax({
-    //     url: "contato.vinimanzano@gmail.com",
-    //     method: "POST",
-    //     data: {
-    //         name: "FormSubmit",
-    //         message: "Hello, I'm Vinícius Manzano, I'll get back to you as soon as possible."
-    //     },
-    //     dataType: "json"
-    // });
+    var btnn = document.querySelector('button[type="button"]');
+btn.addEventListener('click', function(){
+    window.location='https://github.com/Vinimanzano';
+});

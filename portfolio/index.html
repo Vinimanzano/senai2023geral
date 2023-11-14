@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css" /> 
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css"/> 
     <title>portfolio</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
                 <a href="#home" class="one">Home</a>
                 <a href="#about-me" class="two">About-me</a>
                 <a href="#skills" class="tree">Skills</a></div>
-                <a href="#projects" class="four">projects</a></div>
+                <a href="#projects" class="four">Projects</a></div>
+                <a href="#contact" class="five">Contact me</a></div>
         </nav>    
     </header>
         <section class="home" id="home">
@@ -40,7 +42,7 @@
         </section>
         <section class="about-me" id="about-me">
             <div class="teste1">
-                <h1>About-me</h1>
+                <h1>About-me:</h1>
                 <p>Systems Analysis and development student at Senai, game player in my free time and every day trying harder to be better! Nice to meet you, this is me.</p>
             </div>
         </section>
@@ -79,6 +81,17 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="contact" id="contact">
+
+            <h1>Contact-me:</h1>
+            <form action="contato.vinimanzano@gmail.com" method="POST">
+                <input class="input" type="text" name="name"  placeholder="Nome" required>
+                <input class="input" type="email" name="email"  placeholder="E-mail" required>
+                <input class="input" type="number" name="number" placeholder="(xx)xxxxx-xxxx" required>
+                <textarea  class="input text" name="mensagem" placeholder="leave your message" required></textarea>
+                <button class="btnn" type="submit">Send</button>
+            </form>
         </section>
         <footer>
                 <p>Copyright© 2023 by Vinícius Manzano | All Rights Reserved.</p>

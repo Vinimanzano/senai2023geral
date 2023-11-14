@@ -257,7 +257,7 @@ font-family: 'Share Tech Mono', monospace;
     height: 20px;
     justify-content: center;
     position: relative;
-    padding: 10px 25px;
+    padding: 10px 38px;
     display: flex;
     align-items: center;
     font-size: 17px;
@@ -304,6 +304,59 @@ font-family: 'Share Tech Mono', monospace;
   box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
   }
 
+  .five {
+    background: transparent;
+    width: 10%;
+    height: 20px;
+    justify-content: center;
+    position: relative;
+    padding: 10px 38px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255, 250, 250);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+.five span {
+    margin: 10px;
+  }
+  
+.five::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+.five:hover {
+    color: #000000;
+    border: 1px solid rgb(255, 249, 249);
+  }
+  
+.five:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
+  }
+
 .home{
     display: flex;
     width: 89%;
@@ -313,7 +366,7 @@ font-family: 'Share Tech Mono', monospace;
 }
 
 section{
-    padding-top: 8%;
+    padding-top: 12.6%;
 }
 
 .teste{
@@ -383,12 +436,12 @@ section{
 
 .about-me{
   font-family: 'Share Tech Mono', monospace;
-    display: flex;
-    width: 89%;
-    height: 50vh;
-    /* border: 1px solid rgb(174, 15, 15); */
-    justify-content: space-around;
-    padding-left: 10%;
+  display: flex;
+  width: 89%;
+  height: 50vh;
+  /* border: 1px solid rgb(174, 15, 15); */
+  justify-content: space-around;
+  padding-left: 10%;
     
 }
 
@@ -514,6 +567,116 @@ section{
   word-break: break-word;
 }
 
+.contact{
+  display: flex;
+  flex-direction:column ;
+  width: 89%;
+  height: 50vh;
+  font-size: 2rem;
+  /* border: 2px solid rgb(28, 174, 15); */
+}
+
+.contact h1{
+  display: flex;
+  align-items: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 4rem;
+  opacity: 0;
+  transform: translateY(-0.25em);
+  animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
+  color: rgb(0, 0, 0);
+  padding-left: 5.4%;
+  text-shadow: 3px 5px 9px white;
+  height: 17%;
+  /* border: 2px solid rgb(28, 174, 15); */
+}
+
+form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  row-gap: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid rgb(28, 174, 15); */
+  justify-content: center;
+}
+
+.input {
+  width: 30%;
+  height: 30px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-family: inherit;
+  box-shadow: 0 0 0 1px #ffe3e3;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff5f5;
+}
+
+.text{
+  height:50%;
+  /* border: 2px solid rgb(28, 174, 15); */
+}
+
+.input::placeholder {
+  color: #ce9797;
+  font-size: 12px;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #ffe3e3;
+  border: none;
+}
+
+.btnn {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #f6f6f6, #f1f2f4, #e7e7e7);
+  color: #000000;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.btnn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btnn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btnn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btnn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btnn:hover .btn-text-two {
+  top: 50%;
+}
+
+
 footer {
   display: flex;
   align-items: center;
@@ -544,6 +707,7 @@ footer p{
   background-color: transparent;
   transform: scale(1.3);
 }
+
 
 @keyframes t{
   0% {width:0%}

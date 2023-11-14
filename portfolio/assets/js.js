@@ -1,4 +1,4 @@
-
+// alert("Bem Vindo ao meu Portfolio");
 
 function setCookie(nome, valor, dias){ 
 diasms = (new Date()) .getTime() + 1000 * 3600 * 24 * dias; 
@@ -20,13 +20,12 @@ if (!document.cookie){
     setCookie("cookie", soma, 365);
     }
 
-    $.ajax({
-        url: "contato.vinimanzano@gmail.com",
-        method: "POST",
-        data: {
-            name: "FormSubmit",
-            message: "Hello, I'm Vinícius Manzano, I'll get back to you as soon as possible."
-        },
-        dataType: "json"
-    });
-
+    // $.ajax({
+    //     url: "contato.vinimanzano@gmail.com",
+    //     method: "POST",
+    //     data: {
+    //         name: "FormSubmit",
+    //         message: "Hello, I'm Vinícius Manzano, I'll get back to you as soon as possible."
+    //     },
+    //     dataType: "json"
+    // });

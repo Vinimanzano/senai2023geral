@@ -94,271 +94,156 @@ font-family: 'Share Tech Mono', monospace;
 }
 
 .one {
-    background: transparent;
-    width: 10%;
-    height: 20px;
-    justify-content: center;
-    position: relative;
-    padding: 10px 25px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-  
-.one span {
-    margin: 10px;
-  }
-  
-.one::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
 .one:hover {
-    color: #000000;
-    border: 1px solid rgb(255, 255, 255);
-  }
-  
-.one:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
-  }
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
 
+.one:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.one:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
 .two {
-    background: transparent;
-    width: 60%;
-    height: 20px;
-    justify-content: center;
-    position: relative;
-    padding: 10px 25px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-  
-.two span {
-    margin: 10px;
-  }
-  
-.two::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 40%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
 .two:hover {
-    color: #000000;
-    border: 1px solid rgb(255, 255, 255);
-  }
-  
-.two:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
-  }
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
 
+.two:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.two:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
 .tree {
-    background: transparent;
-    width: 10%;
-    height: 20px;
-    justify-content: center;
-    position: relative;
-    padding: 10px 25px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-
-  
-  
-.tree span {
-    margin: 10px;
-  }
-  
-.tree::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
 .tree:hover {
-    color: #000000;
-    border: 1px solid rgb(255, 255, 255);
-  }
-  
-.tree:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
-  }
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
 
-  .four {
-    background: transparent;
-    width: 10%;
-    height: 20px;
-    justify-content: center;
-    position: relative;
-    padding: 10px 38px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(255, 250, 250);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-  
-.four span {
-    margin: 10px;
-  }
-  
-.four::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
+.tree:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.tree:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
 .four:hover {
-    color: #000000;
-    border: 1px solid rgb(255, 249, 249);
-  }
-  
-.four:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
-  }
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
 
-  .five {
-    background: transparent;
-    width: 10%;
-    height: 20px;
-    justify-content: center;
-    position: relative;
-    padding: 10px 38px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(255, 250, 250);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-  
-.five span {
-    margin: 10px;
-  }
-  
-.five::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
+.four:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.four:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+.five {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
 .five:hover {
-    color: #000000;
-    border: 1px solid rgb(255, 249, 249);
-  }
-  
-.five:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(255, 255, 255);
-  }
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.five:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.five:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
 
 .home{
     display: flex;

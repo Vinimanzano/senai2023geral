@@ -31,7 +31,8 @@ body{
     align-items: center;
     justify-content: flex-start;
     overflow-x: hidden;
-    background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68);
+    /* background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68); */
+    background: black;
     background-size: 500% 100%;
     animation: degrade-animado 5s infinite alternate;
     background-attachment: fixed;
@@ -44,10 +45,10 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-track{
-  background: white;
+  background: rgb(252, 252, 253);
 }
 body::-webkit-scrollbar-thumb{
-  background-color: black;
+  background-color: rgb(238, 238, 238);
   border-radius: 20px;
 }
 
@@ -63,19 +64,21 @@ header{
  justify-content: space-between;
  align-items: center;
  position: fixed;
- background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68);
+ /* background-image: linear-gradient(to left, #6000ff, #8a00ff, #004e68); */
+ background: black;
  background-size: 500% 100%;
  animation: degrade-animado 5s infinite alternate;
  background-attachment: fixed;
  z-index: 99;
+ text-shadow: 3px 2px 5px  yellow;
  /* background-color: rgb(42, 165, 118); */
 }
 
 header p{
  font-size: 2.3rem;
- color: rgb(17, 17, 17);
+ color: rgb(240, 238, 238);
  font-family: 'Damion', cursive;
- color: rgb(0, 0, 0);
+ color: rgb(223, 223, 223)
 }
 
 
@@ -376,7 +379,7 @@ section{
     width: 60%;
     height: 40%;
     /* border: 1px solid red; */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding-top: 6%;
     padding-left: 5%;
 }
@@ -389,7 +392,7 @@ section{
     white-space: nowrap;
     overflow: hidden;
   animation:t 3s linear infinite alternate;
-  text-shadow: 3px 5px 9px white;
+  text-shadow: 3px 5px 9px  yellow;
 }
 
 .teste p{
@@ -416,8 +419,8 @@ section{
   width: 300px;
   height: 350px;
   background-image: url(./img/283149099_5137559336332177_507569433021069880_n.jpg);
-  border: solid 3px rgb(5, 5, 5);
-  text-shadow: rgb(0, 0, 0) 2px 10px 2px;
+  border: solid 3px rgb(255, 255, 255);
+  text-shadow: rgb(238, 238, 238) 2px 10px 2px;
   background-size: 300px;
 }
 
@@ -451,8 +454,8 @@ section{
   transform: translateY(-0.25em);
   display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
-  color: rgb(0, 0, 0);
-  text-shadow: 3px 5px 9px white;
+  color: rgb(245, 245, 245);
+  text-shadow: 3px 5px 9px yellow;
 }
 
 .teste1 p{
@@ -485,8 +488,8 @@ section{
   transform: translateY(-0.25em);
   display: inline-block;
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
-  color: rgb(0, 0, 0);
-  text-shadow: 3px 5px 9px white;
+  color: rgb(250, 250, 250);
+  text-shadow: 3px 5px 9px yellow;
 }
 
 .teste2 img{
@@ -513,9 +516,9 @@ section{
   opacity: 0;
   transform: translateY(-0.25em);
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding-left: 5.4%;
-  text-shadow: 3px 5px 9px white;
+  text-shadow: 3px 5px 9px yellow;
   height: 12%;
 }
 
@@ -583,9 +586,9 @@ section{
   opacity: 0;
   transform: translateY(-0.25em);
   animation: burst_in 2.3s cubic-bezier(0, 1.62, 1, 1.6) infinite;
-  color: rgb(0, 0, 0);
+  color: rgb(252, 252, 252);
   padding-left: 5.4%;
-  text-shadow: 3px 5px 9px white;
+  text-shadow: 3px 5px 9px  yellow;
   height: 17%;
   /* border: 2px solid rgb(28, 174, 15); */
 }
@@ -640,7 +643,7 @@ form {
   outline: none;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 30px rgba(235, 231, 231, 0.5);
   overflow: hidden;
 }
 
@@ -687,7 +690,7 @@ footer {
 footer p{
   font-size: 1.1rem;
   font-family: 'Share Tech Mono', monospace;
-  color: yellow;
+  color: rgb(255, 255, 252);
 }
 
 .btnTop{
@@ -748,6 +751,7 @@ footer p{
     padding-top: 2%;
     height: 60px;
   }
+  
 .home, .about-me, .skills, .teste, .teste1, .teste2, .projects, .contact {
     padding-left: 5%;
     padding-right: 5%;

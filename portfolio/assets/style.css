@@ -711,7 +711,7 @@ footer p{
   0% {width:0%}
 }
 
-    @keyframes blinking {
+@keyframes blinking {
     0%
     {
         border-color: transparent;
@@ -734,4 +734,76 @@ footer p{
   }
 }
 
-/*@media only screen and (min-width: 900px) and (max-width: 1200px){} */
+@media only screen and (max-width: 768px) {
+  header {
+  flex-direction: column;
+  text-align: center;
+  }
+ 
+.button {
+    width: 100%;
+  }
+
+.logo {
+    padding-top: 2%;
+    height: 60px;
+  }
+.home, .about-me, .skills, .teste, .teste1, .teste2, .projects, .contact {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+.teste h1 {
+  width: auto;
+  border-right: none;
+}
+
+.imagem {    
+width: 100%;
+  }
+ 
+.foto {
+    width: 100%;
+    background-size: cover;
+  }
+
+.social {
+    padding-left: 0;
+  }
+ 
+.social img {
+    margin-right: 10px;
+  }
+
+.footer {
+  flex-direction: column;  
+  text-align: center;
+  }
+} 
+
+@media only screen and (max-width: 390px) {
+  .button {
+    font-size: 1.8rem;
+  }  
+
+.teste h1 {
+    font-size: 2rem;
+  }
+
+.teste p {
+    font-size: 2.5rem;
+  }
+
+.foto {   
+height: 250px;
+  }
+
+.social img { 
+  width: 30px;
+  height: 30px;
+  }
+
+  footer p { 
+font-size: 1rem;
+  }
+}

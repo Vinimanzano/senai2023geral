@@ -19,8 +19,3 @@ if (!document.cookie){
     document.write("<font face='verdana' size='1'>Suas Visitas : " + soma + "</font>");
     setCookie("cookie", soma, 365);
     }
-
-    var btnn = document.querySelector('button[type="button"]');
-btn.addEventListener('click', function(){
-    window.location='https://github.com/Vinimanzano';
-});

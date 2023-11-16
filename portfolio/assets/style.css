@@ -465,7 +465,7 @@ section{
 .contact h1{
   display: flex;
   align-items: center;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Rampart One', sans-serif;
   font-size: 4rem;
   opacity: 0;
   transform: translateY(-0.25em);

@@ -19,3 +19,5 @@ if (!document.cookie){
     document.write("<font face='verdana' size='1'>Suas Visitas : " + soma + "</font>");
     setCookie("cookie", soma, 365);
     }
+
+    

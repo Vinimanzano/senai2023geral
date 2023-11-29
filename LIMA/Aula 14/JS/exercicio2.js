@@ -6,11 +6,11 @@ function contar() {
     let cont = 1
     while (cont <= 10) {
         if (cont % 2 == 0) {
-            saida.innerHTML += `<mark><strong> ${cont} </strong></mark>&#x1F449;`    
+            saida.innerHTML += `<mark><strong> ${cont} </strong></mark>👉`    
         } else {
-            saida.innerHTML += ` ${cont} &#x1F449;`
+            saida.innerHTML += ` ${cont} 👉`
         }
         cont ++ // Corresponde a cont = cont + 1
     }
-    saida.innerHTML += ` &#x1F3C1;`
+    saida.innerHTML += ` 🏁`
 }

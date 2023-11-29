@@ -5,8 +5,8 @@ function contar() {
 
     let cont = 1
     while (cont <= 10) {
-        saida.innerHTML += ` ${cont} &#x1F449;`
+        saida.innerHTML += ` ${cont} 👉`
         cont ++ // Corresponde a cont = cont + 1
     }
-    saida.innerHTML += ` &#x1F3C1;`
+    saida.innerHTML += ` 🏁`
 }

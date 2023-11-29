@@ -27,12 +27,12 @@ body{
     background-color: gray;      
 }
 
-button{
+.button{
     margin-top: 3%;
     color: white;
 }
 
-button {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,16 +46,37 @@ button {
     transition: .3s;
   }
   
-  button:hover {
+.button:hover {
     background-color: #3b82f6;
     box-shadow: 0 0 0 5px #3b83f65f;
     color: #fff;
   }
   
-h2{
+p{
     padding-top: 2%;
     color: white;
     font-family: 'BenchNine', sans-serif;
     font-size: 2rem;
 }
    
+label{
+    display: flex;
+    flex-direction: columm;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: 'BenchNine', sans-serif;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 130%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -13,30 +13,31 @@
         <div class="box-degrade">
         <p>Vinícius Manzano</p></div>
         <img class="logo" src="./assets/img/logo.png">
-        <nav>
+        <div>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-
-                <nav class="button">
-                    <div class="test">
-                        <a href="#home" class="one">Home</a>
-                        <a href="#about-me" class="two">About-me</a>
-                        <a href="#skills" class="tree">Skills</a>
-                        <a href="#projects" class="four">Projects</a>
-                        <a href="#contact" class="five">Contact</a>
-                    </div>
-             </ul>   
+              </div>
+              <ul class="nav-list">
+                <a href="#home" class="one">Home</a>
+                <a href="#about-me" class="two">About-me</a>
+                <a href="#skills" class="tree">Skills</a>
+                <a href="#projects" class="four">Projects</a>
+                <a href="#contact" class="five">Contact</a> 
+            <nav class="button">
+                <div class="test">
+            </nav>
+        </div>     
     </header>
-    <div class="linktree">
-        <div class="code">
-            <a href="https://linktr.ee/vinimanzano?utm_source=linktree_admin_share"><img src="./assets/linktree/QRtiger.png"></a>
+    <section>
+        <div class="linktree">
+            <div class="code" >
+                <a href="https://linktr.ee/vinimanzano?utm_source=linktree_admin_share"><img src="./assets/linktree/QRtiger.png" class="code" href="https://linktr.ee/vinimanzano?utm_source=linktree_admin_share"></a>
+            </div>
         </div>
-    </div>
-        <section class="home" id="home">
+    </section>
+    <section class="home" id="home">
             <div class="teste">
                 <h1>
                     I'am Vinícius Manzano
@@ -49,31 +50,99 @@
                 <div class="social">
                     <div class="social">
                         <a href="https://github.com/Vinimanzano"><img src="./assets/img/github.png"></a>
-                        <a href="https://www.linkedin.com/in/vinimanzano/   "><img src="./assets/img/linkedin.png"></a>
-                        <a href="https://www.instagram.com/vinimanzano/"><img src="./assets/img/insta.png"></a>
+                        <a href="https://www.linkedin.com/in/vinimanzano/   "><img src="./assets/img/linkedin.png" alt=""></a>
+                        <a href="https://www.instagram.com/vinimanzano/"><img src="./assets/img/insta.png" alt=""></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="about-me" id="about-me">
+    </section>
+    <section class="about-me" id="about-me">
             <div class="teste1">
                 <h1>About-me:</h1>
                 <p>Systems Analysis and development student at Senai, game player in my free time and every day trying harder to be better! Nice to meet you, this is me.</p>
+                <a href="https://linktr.ee/vinimanzano?utm_source=linktree_admin_share"><img src="/assets/linktree/QRtiger.png"></a>
             </div>
-        </section>
-
-        <section class="skills" id="skills">
+    </section>
+    <section class="skills" id="skills">
             <div class="teste2">
                 <h1>My Skills:</h1>
-
-                <img src="./assets/img/c.png">
-                <img src="./assets/img/css.png">
-                <img src="./assets/img/html.png">
-                <img src="./assets/img/javascript.png">
-
+                <div id="titulo">
+                    <h2>CÍRCULO PROGRESSIVO</h2>
+                  </div>
+                    <br> <br>
+                  <div class="container">
+                    <div class="card">
+                      <div class="box">
+                        <div class="percent">
+                          <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle id="circle1" cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2><b id="percent1">0</b><span>%</span></h2>
+                          </div>
+                        </div>
+                        <h2 class="text">Html</h2>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="box">
+                        <div class="percent">
+                          <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle id="circle2" cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2><b id="percent2">0</b><span>%</span></h2>
+                          </div>
+                        </div>
+                        <h2 class="text">Css</h2>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="box">
+                        <div class="percent">
+                          <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle id="circle3" cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2><b id="percent3">0</b><span>%</span></h2>
+                          </div>
+                        </div>
+                        <h2 class="text">Javascript</h2>
+                      </div>
+                    </div>
+                  </div>
+                      <script>
+                    let percent = 0
+                    let time          
+                    
+                    function animate(id1, id2, start, end, duration) {
+                      if (start === end) return;
+                      const range = end - start;
+                      let current = start;
+                      const increment = end > start ? 1 : -1;
+                      const stepTime = Math.abs(Math.floor(duration / range));
+                      const obj1 = document.getElementById(id1);
+                      const obj2 = document.getElementById(id2);
+                      const timer = setInterval(function () {
+                        current += increment;
+                        obj1.innerHTML = current;
+                        obj2.style.strokeDashoffset = `${440 - (440 * current) / 100}`
+                        if (current === end) {
+                          clearInterval(timer);
+                        }
+                      }, stepTime);
+                    }
+                  
+                    animate("percent1", "circle1", 0, 40, 5000)
+                    animate("percent2", "circle2", 0, 30, 5000)
+                    animate("percent3", "circle3", 0, 30, 5000)
+                  </script>
             </div>
-        </section>
-        <section class="projects" id="projects">
+    </section>
+    <section class="projects" id="projects">
             <div class="titlePjct">
                 <h1>My Projects:</h1>
             </div>
@@ -97,9 +166,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="contact" id="contact">
-
+    </section>
+    <section class="contact" id="contact">
             <h1>Contact-me:</h1>
             <form action="https://formsubmit.co/contato.vinimanzano@gmail.com" method="POST" id="nada">
                 <input class="input" type="text" name="name"  placeholder="Nome" required>
@@ -113,11 +181,12 @@
 
              </form>
             </form>
-        </section>
-        <footer>
-                <p>Copyright© 2023 by Vinícius Manzano | All Rights Reserved.</p>
-                <a href="#home"><button class="btnTop"></button></a>
-        </footer>
+    </section>
+    <footer>
+            <p>Copyright© 2023 by Vinícius Manzano | All Rights Reserved.</p>
+            <a href="#home"><button class="btnTop"></button></a>
+    </footer>
+        
 </body>
 <script src="./assets/js.js"></script>
 
